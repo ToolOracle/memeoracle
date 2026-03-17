@@ -1,7 +1,14 @@
 {
   "name": "MemeOracle",
-  "description": "Memecoin Intelligence \u2014 9 tools: trending detection, rug check, momentum scoring, whale watch, viral scoring across 80+ chains.",
+  "description": "Memecoin Intelligence \u2014 9 tools, rug check, momentum scoring, x402 USDC micropayments on Base.",
   "url": "https://tooloracle.io/meme/mcp/",
-  "version": "1.0.0",
-  "tools": 9
+  "x402": "https://tooloracle.io/x402/meme/mcp/",
+  "version": "2.0.0",
+  "tools": 9,
+  "pricing": {
+    "unit": "$0.01",
+    "range": "$0.02-$0.10",
+    "network": "base",
+    "currency": "USDC"
+  }
 }
