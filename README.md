@@ -1,59 +1,53 @@
 # MemeOracle — Memecoin Intelligence MCP Server
 
-> Early meme detection, viral scoring, rug-check risk assessment, whale monitoring, and momentum analysis across 80+ blockchain networks.
+> Early meme detection, rug-check risk scoring, momentum analysis, whale monitoring, viral potential. 9 tools, 80+ chains.
 
-**Part of [ToolOracle](https://tooloracle.io) — AI-Native MCP Tools for Professionals**
+**Part of [ToolOracle](https://tooloracle.io) — Policy-enforced, tier-gated, usage-metered tool execution**
 
-## Connect in 30 seconds
+## Connect
 
 ```bash
 npx -y mcp-remote https://tooloracle.io/meme/mcp/
 ```
 
-**Claude Desktop**:
-```json
-{
-  "mcpServers": {
-    "memeoracle": {
-      "command": "npx",
-      "args": ["-y", "mcp-remote", "https://tooloracle.io/meme/mcp/"]
-    }
-  }
-}
+## x402 Pay-per-call (autonomous agents)
+
+```
+POST https://tooloracle.io/x402/meme/mcp/
+→ 402 with structured pricing → Send USDC on Base → Retry with X-PAYMENT header
 ```
 
-## 9 Tools
+## 9 Tools · 1 unit = $0.01
 
-| Tool | Credits | Description |
-|------|---------|-------------|
-| `trending_memes` | 2 | Top trending/boosted memecoins + CoinGecko trending |
-| `new_launches` | 2 | Freshest token launches with profiles and links |
-| `token_scan` | 1 | Deep scan: price, liquidity, volume, age, DEX info |
-| `rug_check` | 3 | Risk score 0-100 with detailed flags (liquidity, age, volume, FDV) |
-| `momentum_score` | 3 | Momentum COLD/WARMING/HOT/EXPLOSIVE with signals |
-| `whale_watch` | 2 | Smart money: top boosts + community takeovers |
-| `chain_radar` | 2 | Hottest tokens on a specific chain by volume |
-| `viral_score` | 3 | Google Trends + DexScreener boosts = viral potential |
-| `health_check` | 0 | Server status, API backends, tool list |
+| Tool | Units | Price | Tier |
+|------|-------|-------|------|
+| `rug_check` | 10 | $0.10 | Premium |
+| `momentum_score` | 8 | $0.08 | Deep |
+| `viral_score` | 8 | $0.08 | Deep |
+| `whale_watch` | 5 | $0.05 | Deep |
+| `trending_memes` | 3 | $0.03 | Standard |
+| `chain_radar` | 3 | $0.03 | Standard |
+| `new_launches` | 3 | $0.03 | Standard |
+| `token_scan` | 2 | $0.02 | Standard |
+| `health_check` | 0 | free | — |
 
-## Data Sources (all free, no API key required)
+## Risk scoring
 
-- **DexScreener**: Token boosts, profiles, pairs, community takeovers (300 req/min)
-- **CoinGecko**: Trending tokens
-- **SerpAPI**: Google Trends data (optional, enhances viral_score)
+`rug_check` returns a 0-100 risk score based on: liquidity depth, token age, volume patterns, buy/sell ratio, FDV/liquidity ratio. Rating: LOW / MEDIUM / HIGH / CRITICAL.
 
-## Supported Chains
+## Tier gating
 
-Solana, Ethereum, Base, BSC, Arbitrum, Polygon, Avalanche, and 80+ more via DexScreener.
+| Tier | Max/call | Blocked |
+|------|----------|---------|
+| Free ($0) | 3 units | rug_check |
+| Starter ($49/mo) | 8 units | — |
+| Pro+ / x402 | 15 units | — |
 
-## Pricing
+## Data sources (all free, no API key)
 
-Credits shared across all ToolOracle products: Free (50/mo) | Starter $49 (500) | Pro $149 (2K) | Agency $349 (6K)
+DexScreener (300 req/min) · CoinGecko · SerpAPI Google Trends
 
 ## Links
 
-- [ToolOracle Platform](https://tooloracle.io)
-- [RankOracle (SEO)](https://github.com/ToolOracle/rankoracle)
-- [ShopOracle (E-Commerce)](https://github.com/ToolOracle/shoporacle)
-- [SmartMoneyOracle](https://github.com/ToolOracle/smartmoneyoracle)
-- [YieldOracle](https://github.com/ToolOracle/yieldoracle)
+- [ToolOracle](https://tooloracle.io) · [x402 Gateway](https://tooloracle.io/x402/)
+- [RankOracle](https://github.com/ToolOracle/rankoracle) · [ShopOracle](https://github.com/ToolOracle/shoporacle) · [YieldOracle](https://github.com/ToolOracle/yieldoracle) · [SmartMoneyOracle](https://github.com/ToolOracle/smartmoneyoracle)
