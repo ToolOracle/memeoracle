@@ -1,0 +1,7 @@
+{
+  "name": "MemeOracle",
+  "description": "Memecoin Intelligence \u2014 9 tools: trending detection, rug check, momentum scoring, whale watch, viral scoring across 80+ chains.",
+  "url": "https://tooloracle.io/meme/mcp/",
+  "version": "1.0.0",
+  "tools": 9
+}
