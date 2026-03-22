@@ -1,53 +1,61 @@
-# MemeOracle — Memecoin Intelligence MCP Server
+# 😂 memeOracle
 
-> Early meme detection, rug-check risk scoring, momentum analysis, whale monitoring, viral potential. 9 tools, 80+ chains.
+**Utility MCP Server** — 0 tools | Part of [ToolOracle](https://tooloracle.io)
 
-**Part of [ToolOracle](https://tooloracle.io) — Policy-enforced, tier-gated, usage-metered tool execution**
+![Tools](https://img.shields.io/badge/MCP_Tools-0-10B898?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Live-00C853?style=flat-square)
+![Tier](https://img.shields.io/badge/Tier-Free-2196F3?style=flat-square)
 
-## Connect
+## Quick Connect
 
 ```bash
+# Claude Desktop / Cursor / Windsurf
 npx -y mcp-remote https://tooloracle.io/meme/mcp/
 ```
 
-## x402 Pay-per-call (autonomous agents)
-
+```json
+// claude_desktop_config.json
+{
+  "mcpServers": {
+    "memeoracle": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://tooloracle.io/meme/mcp/"]
+    }
+  }
+}
 ```
-POST https://tooloracle.io/x402/meme/mcp/
-→ 402 with structured pricing → Send USDC on Base → Retry with X-PAYMENT header
-```
 
-## 9 Tools · 1 unit = $0.01
+## Tools (0)
 
-| Tool | Units | Price | Tier |
-|------|-------|-------|------|
-| `rug_check` | 10 | $0.10 | Premium |
-| `momentum_score` | 8 | $0.08 | Deep |
-| `viral_score` | 8 | $0.08 | Deep |
-| `whale_watch` | 5 | $0.05 | Deep |
-| `trending_memes` | 3 | $0.03 | Standard |
-| `chain_radar` | 3 | $0.03 | Standard |
-| `new_launches` | 3 | $0.03 | Standard |
-| `token_scan` | 2 | $0.02 | Standard |
-| `health_check` | 0 | free | — |
+| Tool | Description |
+|------|-------------|
 
-## Risk scoring
+## Pricing
 
-`rug_check` returns a 0-100 risk score based on: liquidity depth, token age, volume patterns, buy/sell ratio, FDV/liquidity ratio. Rating: LOW / MEDIUM / HIGH / CRITICAL.
+| Tier | Rate Limit | Price |
+|------|-----------|-------|
+| Free | 100 calls/day | €0 |
+| Pro | 10,000 calls/day | €29/month |
+| Enterprise | Unlimited | Custom |
 
-## Tier gating
+> Free tier includes all tools with rate limiting. Upgrade for higher limits and priority support.
 
-| Tier | Max/call | Blocked |
-|------|----------|---------|
-| Free ($0) | 3 units | rug_check |
-| Starter ($49/mo) | 8 units | — |
-| Pro+ / x402 | 15 units | — |
+## Part of ToolOracle
 
-## Data sources (all free, no API key)
+memeOracle is one of **42 specialized MCP servers** in the [ToolOracle](https://tooloracle.io) ecosystem — the largest collection of production-ready MCP tools for AI agents.
 
-DexScreener (300 req/min) · CoinGecko · SerpAPI Google Trends
+
+
+**Related Oracles:**
+- [FeedOracle](https://feedoracle.io) — Evidence-grade compliance data infrastructure
+- [ToolOracle](https://tooloracle.io) — 42 Oracles, 390+ MCP Tools
 
 ## Links
 
-- [ToolOracle](https://tooloracle.io) · [x402 Gateway](https://tooloracle.io/x402/)
-- [RankOracle](https://github.com/ToolOracle/rankoracle) · [ShopOracle](https://github.com/ToolOracle/shoporacle) · [YieldOracle](https://github.com/ToolOracle/yieldoracle) · [SmartMoneyOracle](https://github.com/ToolOracle/smartmoneyoracle)
+- 🌐 Live: `https://tooloracle.io/meme/mcp/`
+- 📚 Docs: [tooloracle.io/docs](https://tooloracle.io/docs)
+- 🏠 Platform: [tooloracle.io](https://tooloracle.io)
+
+---
+
+*Built by [FeedOracle](https://feedoracle.io) — Evidence by Design*
